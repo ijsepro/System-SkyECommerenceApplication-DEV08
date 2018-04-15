@@ -15,3 +15,10 @@
 .text-light-blue{
     color: lightblue;
 }
+
+.container-fluid{
+    background-color: white;
+}
+.pe-7s-search{
+    font-size: 30px;
+}
