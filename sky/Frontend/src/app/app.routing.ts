@@ -4,6 +4,7 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
+import { MessagesComponent } from './message/messages.component';
 import { UserComponent } from './user/user.component';
 import { TablesComponent } from './tables/tables.component';
 import { TypographyComponent } from './typography/typography.component';
@@ -14,6 +15,7 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
 
 const routes: Routes =[
     { path: 'dashboard',      component: HomeComponent },
+    { path: 'message',        component: MessagesComponent },
     { path: 'user',           component: UserComponent },
     { path: 'table',          component: TablesComponent },
     { path: 'typography',     component: TypographyComponent },
