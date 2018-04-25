@@ -21,6 +21,9 @@ import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
+// import { MessageServiceComponent } from './message-service/message-service.component';
+import { MessageComponentComponent } from './message-component/message-component.component';
+import {MessageServiceService} from "./service/message-service.service";
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
-    UpgradeComponent
+    UpgradeComponent,
+    // MessageServiceComponent,
+    MessageComponentComponent
 
   ],
   imports: [
@@ -47,7 +52,9 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
     AppRoutingModule,
     LbdModule
   ],
-  providers: [],
+  providers: [
+      MessageServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

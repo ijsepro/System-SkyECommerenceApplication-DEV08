@@ -16,8 +16,12 @@ class Message extends CI_Controller {
 		$this->load->model('message_model');
 	}
 	public function index(){
-		$this->load->model("message_model");
-		$data["fetch_data"]=$this->message_model->fetch_data();
-		$this->load->view("message_view",$data);
+//		$query=$this->load->db("messages");
+		$query=$this->db->get("messages");
+//		$json=json_encode($query);
+		$json=json_encode($query->result());
+		echo $json;
+//		$data["fetch_data"]=$this->message_model->fetch_data();
+//		echo $data[0];
 	}
 }

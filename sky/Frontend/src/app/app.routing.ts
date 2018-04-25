@@ -4,7 +4,8 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { MessagesComponent } from './message/messages.component';
+import { MessageComponentComponent } from './message-component/message-component.component';
+// import { MessagesComponent } from './message/messages.component';
 import { UserComponent } from './user/user.component';
 import { TablesComponent } from './tables/tables.component';
 import { TypographyComponent } from './typography/typography.component';
@@ -12,10 +13,11 @@ import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
+import {MessagesComponent} from "./message/messages.component";
 
 const routes: Routes =[
     { path: 'dashboard',      component: HomeComponent },
-    { path: 'message',        component: MessagesComponent },
+    { path: 'message-component',        component: MessageComponentComponent},
     { path: 'user',           component: UserComponent },
     { path: 'table',          component: TablesComponent },
     { path: 'typography',     component: TypographyComponent },

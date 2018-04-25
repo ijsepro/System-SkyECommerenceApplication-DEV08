@@ -7,8 +7,8 @@
  */
 class message_model extends CI_Model{
 	function fetch_data(){
-//		$query=$this->db->get("messages");
-		$query=$this->db->query("SELECT * FROM messages ORDER BY DESC ");
+		$query=$this->db->get("messages");
+//		$query=$this->db->query("SELECT * FROM messages ORDER BY DESC ");
 		return $query;
 	}
 }
