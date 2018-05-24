@@ -1,0 +1,113 @@
+<div class="container marketing">
+  <div class="row">
+    <div class="col-md-12" >
+<!--id="bodyOne"-->
+    </div>
+  </div>
+  <div class="row">
+    <div class="row">
+      <div class="col-md-12">
+        <br>
+        <div class="shadow-lg p-2 mb-5 bg-info rounded" id="subHead">System User Registration</div>
+      </div>
+    </div>
+    <div class="col-md-12">
+
+
+      <form class="register-form">
+        <div class="form-row">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">First and last name</span>
+            </div>
+            <input
+              name="firstName" id="firstName"
+              type="text" class="form-control">
+            <input
+              name="lastName" id="lastName"
+              type="text" class="form-control">
+          </div>
+        </div><br>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            name="email" id="email"
+            type="email" class="form-control" placeholder="name@example.com">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="password">Password</label>
+            <input
+              name="password" id="password"
+              type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Conform-Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="addressLine1">Address</label>
+          <input
+            name="addressLine1" id="addressLine1"
+            type="text" class="form-control" placeholder="Address Line 1">
+        </div>
+        <div class="form-group">
+          <input
+            name="addressLine2" id="addressLine2"
+            type="text" class="form-control" placeholder="Address Line 2">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-5">
+            <label for="mobile">Mobile Number</label>
+            <input
+              name="mobile" id="mobile"
+              type="text" class="form-control">
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1">
+            <label for="mail">Gender</label>
+          </div>
+          <div class="form-check form-check-inline col-md-2">
+            <input
+              name="mail" id="mail"
+              class="form-check-input" type="radio" value="option1">
+            <label class="form-check-label" for="mail">Mail</label>
+          </div>
+          <div class="form-check form-check-inline col-md-2">
+            <input
+              name="femail" id="femail"
+              class="form-check-input" type="radio" value="option2">
+            <label class="form-check-label" for="femail">Femail</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="country">Country</label>
+            <input
+              name="country" id="country"
+              type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="city">City</label>
+            <input
+              name="city" id="city"
+              type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="cityCode">City Code</label>
+            <input
+              name="cityCode" id="cityCode"
+              type="text" class="form-control">
+          </div>
+        </div>
+        <br>
+        <button (click)="newSystemUser()"
+                class="btn btn-primary"
+                style="left: 38.5%" value="upload">Register
+        </button>
+        <br><br>
+      </form>
+    </div>
+  </div>
+</div>
