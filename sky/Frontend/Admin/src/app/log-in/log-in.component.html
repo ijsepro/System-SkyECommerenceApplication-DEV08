@@ -10,16 +10,16 @@
               <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
               <h1 class="h3 mb-3 font-weight-normal">{{log_in_home_header}}</h1>
               <h1 class="h3 mb-3 font-weight-normal">{{log_in_home_header_sub}}</h1><br><br>
-              <label for="inputEmail" class="sr-only">Email address</label>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br>
-              <label for="inputPassword" class="sr-only">Password</label>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
+              <label for="userEmail" class="sr-only">Email address</label>
+              <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="Email address" required autofocus><br>
+              <label for="userPassword" class="sr-only">Password</label>
+              <input type="password" name="userPassword" id="userPassword" class="form-control" placeholder="Password" required><br>
               <div class="checkbox mb-3">
               <label>
               <input type="checkbox" value="remember-me"> Remember me
               </label>
               </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+            <button type="submit" class="btn btn-primary btn-block" (click)="signIn()">Login</button>
             <p class="mt-5 mb-3 text-muted">&copy;{{footer_titel}}</p>
       </form>
   </div>

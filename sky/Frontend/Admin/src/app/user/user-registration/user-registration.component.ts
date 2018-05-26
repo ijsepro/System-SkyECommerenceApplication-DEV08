@@ -70,3 +70,5 @@ export class UserRegistrationComponent implements OnInit {
   }
 
 }
+
+// ST-02/DIV08/SKYECOMMERECS/NEW/BRN-07

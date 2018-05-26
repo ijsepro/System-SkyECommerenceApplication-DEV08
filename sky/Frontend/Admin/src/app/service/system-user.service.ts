@@ -6,7 +6,7 @@ import {Http} from "@angular/http";
 })
 export class SystemUserService {
 
-  private url = 'http://localhost/E-com/Backend/index.php/SystemUser/insert';
+  private url = 'http://localhost/E-com/Backend/index.php/SystemUser/insert/';
 
   constructor(private http: Http) {
   }
@@ -16,7 +16,7 @@ export class SystemUserService {
   }
 
   sendEmail(formdata) {
-    return this.http.post('http://localhost/E-com/Backend/index.php/SystemUser/insert', formdata);
+    return this.http.post('http://localhost/E-com/Backend/index.php/SystemUser/insert/', formdata);
   }
 
 }
