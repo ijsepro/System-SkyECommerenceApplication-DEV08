@@ -9,6 +9,8 @@ import {NaveBodyComponent} from "./header/nave-body/nave-body.component";
 import {UserDashbordComponent} from "./user-dashbord/user-dashbord.component";
 import {UserLoginComponent} from "./user-login/user-login.component";
 import {UserRegisterComponent} from "./user-register/user-register.component";
+import {FooterLinkComponent} from "./footer/footer-link/footer-link.component";
+import {FooterComponent} from "./footer/footer.component";
 
 
 const routes: Routes = [
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path:'user-dash',component:UserDashbordComponent},
   { path:'user-login',component:UserLoginComponent},
   { path:'user-regis',component:UserRegisterComponent},
+  { path:'footer-link',component:FooterLinkComponent},
+  { path:'footer',component:FooterComponent},
   { path:'',redirectTo: 'home', pathMatch: 'full' },
   // {path: 'layout', canActivate: [AuthGuard]}
 

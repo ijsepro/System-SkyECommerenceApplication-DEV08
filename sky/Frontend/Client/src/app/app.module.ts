@@ -11,6 +11,10 @@ import { NaveBodyComponent } from './header/nave-body/nave-body.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserDashbordComponent } from './user-dashbord/user-dashbord.component';
+import { FooterComponent } from './footer/footer.component';
+import { FooterLinkComponent } from './footer/footer-link/footer-link.component';
+import {ClientService} from "./services/client.service";
+import {LogInService} from "./services/log-in.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +25,9 @@ import { UserDashbordComponent } from './user-dashbord/user-dashbord.component';
     NaveBodyComponent,
     UserRegisterComponent,
     UserLoginComponent,
-    UserDashbordComponent
+    UserDashbordComponent,
+    FooterComponent,
+    FooterLinkComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,10 @@ import { UserDashbordComponent } from './user-dashbord/user-dashbord.component';
     HttpModule,
     RouterModule
   ],
-  providers: [],
+  providers: [
+    ClientService,
+    LogInService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
