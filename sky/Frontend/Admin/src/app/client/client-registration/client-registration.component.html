@@ -1,0 +1,49 @@
+<app-header></app-header>
+<div id="bck">
+  <div class="row">
+    <div class="col-md-4">
+      <br><br><br>
+      <label  id="log"></label>
+    </div>
+    <div class="col-md-4">
+
+      <br><br><br>
+      <!--<div class="container marketing">-->
+      <!--<div class="row">-->
+      <!--<div class="col-md-12">-->
+      <!--<div class="row">-->
+
+      <div class="col-md-12">
+        <br>
+        <div class="shadow-lg p-3 mb-5 bg-info rounded">Add new Client</div>
+      </div>
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal">{{log_in_home_header}}</h1>
+        <h1 class="h3 mb-3 font-weight-normal">{{log_in_home_header_sub}}</h1>
+        <label for="fullName" class="sr-only">Full Name</label>
+        <input type="name" name="fullName" id="fullName" class="form-control" placeholder="Full Name" required autofocus><br>
+        <label for="Country" class="sr-only">Country</label>
+        <input type="country" name="country" id="country" class="form-control" placeholder="Country" required autofocus><br>
+        <label for="city" class="sr-only">City</label>
+        <input type="city" name="city" id="city" class="form-control" placeholder="City" required autofocus><br>
+        <label for="emailAddress" class="sr-only">Email Addrress</label>
+        <input type="email" name="emailAddress" id="emailAddress" class="form-control" placeholder="Email Address" required><br>
+        <div class="checkbox mb-3">
+
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" (click)="signIn()">Save</button>
+        <button type="cancel" class="btn btn-red btn-block">Cancel </button>
+        <br>
+        <br>
+        <button style="margin-left: 700px" type="cancel" class="btn btn-outline-primary btn">Back</button>
+        <p class="mt-5 mb-3 text-muted">&copy;{{footer_titel}}</p>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+<!--</div>-->

@@ -1,0 +1,75 @@
+<app-header></app-header>
+<div class="container marketing">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+
+        <div class="col-md-12">
+          <br>
+          <div class="shadow-lg p-3 mb-5 bg-info rounded">Company</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a routerLink="/company/company-registration" class="btn btn btn-primary " type="submit" style="margin-left: 1000px" >Add new Company
+  </a>
+
+
+  <div class="row">
+    <div class="col-md-12"><br><br><br></div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card text-center">
+            <div class="card-header">
+              Payment
+            </div>
+            <div class="card-body">
+              <p class="card-title" *ngFor="let post of posts"><label style="height:60px;width: 200px; background-color: white">{{post.name}}</label><label style="height:60px;width: 200px; background-color: white">{{post.titel}}</label><label style="height:60px;width: 200px; background-color: white">{{post.description}}</label><label style="height:60px;width: 200px; background-color: white">{{post.date}}</label></p>
+            </div>
+          </div>
+          <table class="table table-hover table-info">
+            <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Company Name</th>
+              <th scope="col">Country</th>
+              <th scope="col">Categores</th>
+              <th scope="col">Email</th>
+              <th scope="col">Comment-feedback</th>
+            </tr>
+            <p class="card-title" *ngFor="let post of posts"><label style="height:60px;width: 200px; background-color: white">{{post.name}}</label><label style="height:60px;width: 200px; background-color: white">{{post.titel}}</label><label style="height:60px;width: 200px; background-color: white">{{post.description}}</label><label style="height:60px;width: 200px; background-color: white">{{post.date}}</label></p>
+            </thead>
+            <tbody>
+            <tr>
+
+            </tr>
+            </tbody>
+          </table>
+          <ul class="list-group">
+            <li *ngFor="let post of posts" class="list-group-item">
+            <li style="width: 100px"><input type="checkbox"></li>
+            <li style="width: 300px">{{post.name}}</li>
+            <li style="width: 600px">{{post.titel}}</li>
+            <li class="mailbox-subject">{{post.description}}</li>
+            <li style="width: 300px">{{post.date}}</li>
+            <li style="width: 500px">{{post.comment}}</li>
+          </ul>
+          <ul class="list-group">
+            <li *ngFor="let post of posts" class="list-group-item">{{post.name}}</li>
+            <li *ngFor="let post of posts" class="list-group-item">{{post.titel}}</li>
+            <li *ngFor="let post of posts" class="list-group-item">{{post.description}}</li>
+            <li *ngFor="let post of posts" class="list-group-item">{{post.date}}</li>
+            <li *ngFor="let post of posts" class="list-group-item">{{post.comment}}</li>
+            <br>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

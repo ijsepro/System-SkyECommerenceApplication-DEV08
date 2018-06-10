@@ -1,0 +1,31 @@
+<div id="bck">
+<div class="row">
+  <div class="col-md-4">
+      <br><br><br>
+      <label  id="log"></label>
+  </div>
+      <div class="col-md-4">
+          <br><br><br>
+          <form class="form-signin">
+              <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+              <h1 class="h3 mb-3 font-weight-normal">{{log_in_home_header}}</h1>
+              <h1 class="h3 mb-3 font-weight-normal">{{log_in_home_header_sub}}</h1><br><br>
+              <label for="userEmail" class="sr-only">Email address</label>
+              <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="Email address" required autofocus><br>
+              <label for="userPassword" class="sr-only">Password</label>
+              <input type="password" name="userPassword" id="userPassword" class="form-control" placeholder="Password" required><br>
+              <div class="checkbox mb-3">
+              <label>
+              <input type="checkbox" value="remember-me"> Remember me
+              </label>
+              </div>
+            <button type="submit" class="btn btn-primary btn-block" (click)="signIn()">Login</button>
+            <p class="mt-5 mb-3 text-muted">&copy;{{footer_titel}}</p>
+      </form>
+  </div>
+  <div class="col-md-4">
+  <a routerLink="/home">Heroes</a>
+
+</div>
+</div>
+</div>
